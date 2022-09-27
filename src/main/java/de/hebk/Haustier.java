@@ -2,7 +2,7 @@ package de.hebk;
 
 import java.util.Date;
 
-public class Haustier {
+public abstract class Haustier {
     private Date gebDatum;
     private int gewicht;
 }

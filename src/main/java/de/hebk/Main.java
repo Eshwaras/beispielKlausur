@@ -5,9 +5,9 @@ public class Main {
 
         Mitarbeiter test = new Mitarbeiter("Peter");
 
-        test.addNutztier(new Nutztier(1));
-        test.addNutztier(new Nutztier(3));
-        test.addNutztier(new Nutztier(5));
+        test.addNutztier(new Kuh(1, 100));
+        test.addNutztier(new Schaf(3, "Wolle"));
+        test.addNutztier(new Kuh(5, 120));
 
         System.out.println(test);
 

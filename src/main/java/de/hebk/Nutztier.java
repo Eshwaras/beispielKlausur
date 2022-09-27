@@ -1,6 +1,6 @@
 package de.hebk;
 
-public class Nutztier extends Haustier{
+public abstract class Nutztier extends Haustier{
 
     /**
      * Beziehung zu Mitarbeiter

@@ -4,17 +4,27 @@ import java.util.Arrays;
 
 public class Mitarbeiter {
 
+    /**
+     * Name des Mitarbeiters
+     */
     private String name;
 
-       /**
+    /**
      * gerichtete Assoziation zu Nutztieren
      */
     private Nutztier[] nutztiere;
 
+    /**
+     * Konstruktor Mitarbeiter
+     * @param pName
+     */
     public Mitarbeiter(String pName){
         setName(pName);
     }
 
+    /**
+     * Fuettert alle Tiere des Mitarbeiters. Dazu werden alle Tiere mit der ID einmal ausgegeben.
+     */
     public void fuettern(){
         for (int i= 0; i< nutztiere.length; i++){
             System.out.print("Tier mit der ID " + nutztiere[i].getId() + " wurde gefüttert\n");
@@ -41,15 +51,10 @@ public class Mitarbeiter {
         }
     }
 
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
+    /**
+     * Gibt den Mitarbeiter als String aus
+     * @return Mitarbeiter als String inklusive Nutztiere
+     */
     public String toString(){
         String ret = "";
         ret = ret + "Name: " + this.getName() + "\n";
@@ -61,5 +66,21 @@ public class Mitarbeiter {
         ret = ret + "----  \n";
 
         return ret;
+    }
+
+    /**
+     * Setzt den Namen des Mitarbeiters
+     * @return Name des Mitarbeiters
+     */
+    public String getName() {
+        return name;
+    }
+
+    /**
+     * Gibt den Namen des Mitarbeiters zurück
+     * @param name des Mitarbeiters
+     */
+    public void setName(String name) {
+        this.name = name;
     }
 }

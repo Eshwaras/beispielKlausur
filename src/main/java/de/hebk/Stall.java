@@ -1,6 +1,6 @@
 package de.hebk;
 
-public class Stall extends Nutztier{
+public class Stall{
 
     /**
      * Komposition zu Box

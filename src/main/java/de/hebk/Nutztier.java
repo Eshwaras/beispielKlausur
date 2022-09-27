@@ -13,4 +13,22 @@ public class Nutztier extends Haustier{
     private Box meineBox;
 
     private int id;
+
+    public  Nutztier(int pID){
+        setId(pID);
+    }
+
+    public String toString(){
+        return "Das ist Nutztier mit der ID: " + getId();
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int pId){
+        this.id = pId;
+    }
+
+
 }
